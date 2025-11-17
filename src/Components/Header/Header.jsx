@@ -23,6 +23,8 @@ export default function Header() {
                     <button className="btn primary">Raise Complaint</button>
                     <button className="btn outline">Login</button>
                 </div>
+
+                <h2> Hey</h2>
             </div>
         </header>
     );
