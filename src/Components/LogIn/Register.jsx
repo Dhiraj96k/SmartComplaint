@@ -1,82 +1,58 @@
-import './Register.css';
-import { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import "./Register.css";
 
 export default function Register() {
-    const [showPass, setShowPass] = useState(false);
-    const [showConfirm, setShowConfirm] = useState(false);
-
     return (
         <div className="register-container">
-            {/* Left Section */}
             <div className="register-left">
-                <div className="portal-info">
-                    <div className="portal-logo">🔰</div>
+                <div className="logo-box">
+                    <div className="logo-icon">🛡️</div>
                     <h2>ResolveComplaint</h2>
-                    <h1>Complaint Management Portal</h1>
-                    <p>Efficiently Resolving Your Concerns</p>
                 </div>
+
+                <h1>Complaint Management Portal</h1>
+                <p>Efficiently Resolving Your Concerns</p>
             </div>
 
-            {/* Right Section */}
             <div className="register-right">
-                <div className="register-box">
-                    <h1>Create an Account</h1>
-                    <p className="subtitle">Get started by creating your new account</p>
+                <h2>Create an Account</h2>
+                <p className="subtitle">Get started by creating your new account</p>
 
-                    {/* Full Name */}
-                    <label>Full Name</label>
-                    <div className="input-box">
-                        <span className="icon">👤</span>
+                <form className="register-form">
+
+                    <div className="row">
                         <input type="text" placeholder="Enter your full name" />
+                        <input type="email" placeholder="Enter your email" />
                     </div>
 
-                    {/* Email */}
-                    <label>Email Address</label>
-                    <div className="input-box">
-                        <span className="icon">📧</span>
-                        <input type="email" placeholder="Enter your email address" />
+                    <div className="row">
+                        <input type="text" placeholder="Enter your mobile" />
+                        <input type="number" placeholder="Enter your age" />
                     </div>
 
-                    {/* Password */}
-                    <label>Password</label>
-                    <div className="input-box">
-                        <span className="icon">🔒</span>
-                        <input
-                            type={showPass ? "text" : "password"}
-                            placeholder="Enter your password"
-                        />
-                        <span
-                            className="eye-icon"
-                            onClick={() => setShowPass(!showPass)}
-                        >
-                            {showPass ? "🙈" : "👁️"}
-                        </span>
+                    <div className="row">
+                        <input type="text" placeholder="Enter pincode" />
+                        <input type="text" placeholder="Enter your city" />
                     </div>
 
-                    {/* Confirm Password */}
-                    <label>Confirm Password</label>
-                    <div className="input-box">
-                        <span className="icon">🔒</span>
-                        <input
-                            type={showConfirm ? "text" : "password"}
-                            placeholder="Confirm your password"
-                        />
-                        <span
-                            className="eye-icon"
-                            onClick={() => setShowConfirm(!showConfirm)}
-                        >
-                            {showConfirm ? "🙈" : "👁️"}
-                        </span>
+                    <div className="password-box">
+                        <input type="password" placeholder="Enter your password" />
+                        <span className="eye-icon">👁️</span>
                     </div>
 
-                    {/* Register Button */}
-                    <button className="register-btn">Register</button>
+                    <div className="password-box">
+                        <input type="password" placeholder="Confirm your password" />
+                        <span className="eye-icon">👁️</span>
+                    </div>
 
-                    <p className="login-text">
-                        Already have an account? <Link to="/login">Log in</Link>
+                    <button type="submit" className="register-btn">Register</button>
+
+                    <p className="bottom-text">
+                        Already have an account?{" "}
+                        <Link to="/login" className="login-link">Log in</Link>
                     </p>
-                </div>
+                </form>
             </div>
         </div>
     );
