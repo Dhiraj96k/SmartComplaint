@@ -1,8 +1,9 @@
 // Header.jsx
-import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
+    const navigate = useNavigate();
     return (
         <header className="header">
             <div className="header-container">
@@ -22,7 +23,9 @@ export default function Header() {
                 {/* Buttons */}
                 <div className="btn-group">
                     <button className="btn primary">Raise Complaint</button>
-                    <button className="btn outline">Login</button>
+                    <button className="btn outline">
+                        <Link to="/login">Login</Link>
+                    </button>
                 </div>
 
             </div>
