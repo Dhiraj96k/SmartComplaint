@@ -17,7 +17,6 @@ export default function Header() {
                     <a href="#">About</a>
                     <a href="#">Contact Us</a>
                     <a href="#">Dashboard</a>
-                    <a href="#">Goto</a>
                 </nav>
 
                 {/* Buttons */}
