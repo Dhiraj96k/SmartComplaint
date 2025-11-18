@@ -22,7 +22,9 @@ export default function Header() {
 
                 {/* Buttons */}
                 <div className="btn-group">
+                    
                     <button className="btn primary">Raise Complaint</button>
+
                     <button className="btn outline">
                         <Link to="/login">Login</Link>
                     </button>

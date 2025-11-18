@@ -1,0 +1,143 @@
+/* Container Layout */
+.register-container {
+    display: flex;
+    /* width: 100%; */
+    margin: 0rem 5rem;
+    height: 100vh;
+    background: #f3f4f6;
+}
+
+/* LEFT SIDE */
+.register-left {
+    width: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 12px 0 0 12px;
+}
+
+.portal-info {
+    max-width: 420px;
+}
+
+.portal-logo {
+    font-size: 38px;
+    background: #3b82f6;
+    color: white;
+    padding: 16px;
+    border-radius: 12px;
+    width: 64px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portal-info h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.portal-info h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.portal-info p {
+    font-size: 16px;
+    color: #6b7280;
+}
+
+/* RIGHT SIDE */
+.register-right {
+    width: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 0 12px 12px 0;
+}
+
+.register-box {
+    width: 100%;
+    max-width: 420px;
+}
+
+.register-box h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+/* Input Boxes */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-top: 14px;
+    /* This controls spacing between fields */
+}
+
+.input-box {
+    width: 100%;
+    margin-top: 6px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    background: transparent;
+}
+
+.icon {
+    font-size: 18px;
+}
+
+.eye-icon {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Register Button */
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 24px;
+    background: #3b82f6;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Bottom Text */
+.login-text {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #3b82f6;
+    font-weight: 600;
+    text-decoration: none;
+}

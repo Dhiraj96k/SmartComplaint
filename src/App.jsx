@@ -5,6 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import HeroSection from "./Components/Hero/HeroSection";
 import Login from "./Components/LogIn/Login";
+import Register from "./Components/LogIn/Register";
 
 export default function App() {
   return (
@@ -25,6 +26,9 @@ export default function App() {
 
         {/* Login Page */}
         <Route path="/login" element={<Login />} />
+
+        <Route path="/register" element={<Register />} />
+
       </Routes>
     </BrowserRouter>
   );
