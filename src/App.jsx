@@ -6,6 +6,7 @@ import Header from "./Components/Header/Header";
 import HeroSection from "./Components/Hero/HeroSection";
 import Login from "./Components/LogIn/Login";
 import Register from "./Components/LogIn/Register";
+import AboutUs from "./Components/AboutUs/AboutUs";
 
 export default function App() {
   return (
@@ -28,6 +29,8 @@ export default function App() {
         <Route path="/login" element={<Login />} />
 
         <Route path="/register" element={<Register />} />
+
+        <Route path="/about" element={<AboutUs />} />
 
       </Routes>
     </BrowserRouter>

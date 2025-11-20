@@ -62,7 +62,7 @@ export default function Login() {
                     <div className="buttons">
                         <button className="login-btn">Log In</button>
                         <button className="back-btn" onClick={() => navigate("/")}>
-                            {/* onClick={() => navigate(-1)} */}
+                            {/* onClick={() => navigate(-1)} - this is used for previous back and above used to direct navigate landing page*/}
                             Back
                         </button>
                     </div>

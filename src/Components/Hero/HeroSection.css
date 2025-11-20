@@ -1,24 +1,26 @@
 .hero {
-    /* width: 100%; */
-    margin: 0rem 5rem;
-    padding: 80px 16px;
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: auto auto;
     text-align: center;
     background: #ffffff;
 }
 
 .hero-container {
-    max-width: 800px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .hero-title {
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
     color: #0f172a;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+    line-height: 1.2;
 }
 
 .hero-subtitle {
-    font-size: 18px;
+    font-size: 20px;
     color: #64748b;
+    margin-top: 8px;
 }

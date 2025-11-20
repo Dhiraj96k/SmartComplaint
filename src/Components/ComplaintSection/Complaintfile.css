@@ -1,7 +1,7 @@
 .complaint-section {
-    /* width: 100%; */
-    margin: 0rem 5rem;
-    padding: 60px 20px;
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 60px 0px;
     background: #f8fafc;
 }
 
