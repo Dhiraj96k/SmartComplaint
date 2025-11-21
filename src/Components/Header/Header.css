@@ -25,10 +25,10 @@
 }
 
 .logo-icon {
-    width: 26px;
-    height: 26px;
-    border-radius: 12px;
-    object-fit: cover;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    content: url(../../assets/Logo.png);
 }
 
 .logo-text {
