@@ -8,7 +8,7 @@ export default function Header() {
 
                 {/* Logo */}
                 <div className="logo">
-                    <img src="../../assets/Logo.png" alt="logo" className="logo-icon" />
+                    <img className="logo-icon" />
                     <Link to={"/"} className="logo-text">SmartComplaint</Link>
                 </div>
 
@@ -16,12 +16,12 @@ export default function Header() {
                 <nav className="nav">
                     <Link to="/about">About</Link>
                     <Link to="/contact">Contact Us</Link>
-                    <Link to="/dashboard">Dashboard</Link>
+                    <Link to="#">Dashboard</Link>
                 </nav>
 
                 {/* Buttons */}
                 <div className="btn-group">
-                    <Link to="/raise-complaint" className="btn primary">Raise Complaint</Link>
+                    <Link to="#" className="btn primary">Raise Complaint</Link>
                     <Link to="/login" className="btn outline">Login</Link>
                 </div>
 
