@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../Header/Header";
 import "./ContactUs.css";
 
-export default function ContactUsPage() {
+export default function ContactUs() {
 
     const [showSuccess, setShowSuccess] = useState(false);
     const [complaintId, setComplaintId] = useState("");
