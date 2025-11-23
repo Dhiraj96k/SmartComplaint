@@ -8,6 +8,7 @@ import Header from "./Components/Header/Header";
 import HeroSection from "./Components/Hero/HeroSection";
 import Login from "./Components/LogIn/Login";
 import Register from "./Components/LogIn/Register";
+import Dashboard from "./Components/Dashboard/Dashboard";
 
 export default function App() {
   return (
@@ -26,7 +27,6 @@ export default function App() {
           }
         />
 
-        {/* Login Page */}
         <Route path="/login" element={<Login />} />
 
         <Route path="/register" element={<Register />} />
@@ -34,6 +34,8 @@ export default function App() {
         <Route path="/about" element={<AboutUs />} />
 
         <Route path="/contact" element={<ContactUs />} />
+
+        <Route path="/dashboard" element={<Dashboard />} />
 
       </Routes>
     </BrowserRouter>

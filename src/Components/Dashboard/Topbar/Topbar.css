@@ -1,0 +1,92 @@
+.topbar {
+    margin-left: 220px;
+    /* same width as sidebar */
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    background: #ffffff;
+    border-bottom: 1px solid #e6e9ef;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+
+.search-box {
+    background: #f1f5f9;
+    padding: 10px 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 520px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    width: 100%;
+}
+
+.search-icon {
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.profile-pic {
+    content: url(../../../assets/personPic.jpg);
+}
+
+.top-btn.bell {
+    background: #eef2ff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info .p-name {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.profile-info .p-email {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .topbar {
+        margin-left: 0;
+        padding: 10px 16px;
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: 420px;
+    }
+}

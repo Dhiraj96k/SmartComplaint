@@ -16,7 +16,6 @@ export default function Header() {
                     <Link to="/" className="logo-text">SmartComplaint</Link>
                 </div>
 
-                {/* Hamburger Icon (Mobile) */}
                 <div
                     className="hamburger"
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -30,7 +29,7 @@ export default function Header() {
                     <nav className="nav">
                         <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
                         <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</Link>
-                        <Link to="#">Dashboard</Link>
+                        <Link to="/dashboard">Dashboard</Link>
                     </nav>
 
                     <div className="btn-group">

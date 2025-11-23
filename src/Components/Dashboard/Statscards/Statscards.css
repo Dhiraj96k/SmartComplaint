@@ -1,0 +1,22 @@
+.stats-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px;
+    border: 1px solid #eef2f7;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 2px 8px rgba(8, 15, 30, 0.02);
+}
+
+.stats-label {
+    color: #475569;
+    font-weight: 600;
+}
+
+.stats-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+}
