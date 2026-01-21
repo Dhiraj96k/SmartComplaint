@@ -14,10 +14,10 @@ export default function Login() {
     const access = async (e) => {
         e.preventDefault();
 
-        if (!username.trim() || !password.trim()) {
-            alert("Please enter both username and password");
-            return;
-        }
+        // if (!username.trim() || !password.trim()) {
+        //     alert("Please enter both username and password");
+        //     return;
+        // }
 
         setLoading(true);
 
